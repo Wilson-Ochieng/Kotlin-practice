@@ -1,13 +1,13 @@
 fun main(){
-    birthdayGreeting()
-    println(birthdayGreeting())
+    birthdayGreeting("Roy")
+    println(birthdayGreeting("Roy"))
 
 }
 
 
-//Defining a function
-fun birthdayGreeting(): String {
-    val nameGreeting="Happy Birthday, Rover!"
+//Passed name parameter
+fun birthdayGreeting(name:String): String {
+    val nameGreeting="Happy Birthday, $name!"
     val ageGreeting ="You are now 5 years old!"
     return "$nameGreeting\n ,$ageGreeting"
 }
