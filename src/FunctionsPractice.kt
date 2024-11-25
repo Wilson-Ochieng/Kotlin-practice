@@ -1,13 +1,13 @@
 fun main(){
-    birthdayGreeting("Roy")
-    println(birthdayGreeting("Roy"))
+    birthdayGreeting("Roy",9)
+    println(birthdayGreeting("Roy",9))
 
 }
 
 
-//Passed name parameter
-fun birthdayGreeting(name:String): String {
+//Passed multiple  parameters
+fun birthdayGreeting(name:String,age:Int): String {
     val nameGreeting="Happy Birthday, $name!"
-    val ageGreeting ="You are now 5 years old!"
+    val ageGreeting ="You are now $age years old!"
     return "$nameGreeting\n ,$ageGreeting"
 }
